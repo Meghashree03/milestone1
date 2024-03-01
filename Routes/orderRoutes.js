@@ -22,14 +22,14 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'your_email@gmail.com', // replace with your email address
-    pass: 'your_password' // replace with your email password or an app-specific password
+    user: 'meghashree.cs21@sahyadri.edu.in', // replace with your email address
+    pass: 'megha' // replace with your email password or an app-specific password
   }
 });
 
 const sendOTP = async (email, otp) => {
   const mailOptions = {
-    from: 'your_email@gmail.com', // replace with your email address
+    from: 'meghashree.cs21@sahyadri.edu.in', // replace with your email address
     to: email,
     subject: 'Order Delivery Verification OTP',
     text: `Your OTP for order delivery verification is: ${otp}`
